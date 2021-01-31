@@ -1,11 +1,14 @@
 package com.example.flixster;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
+import android.view.View;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
     public static final String TAG = "MainActivity";
 
+
     List<Movie> movies;
     MovieAdapter movieAdapter;
     RecyclerView rv_movies;
@@ -34,9 +38,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        rv_movies = (RecyclerView) findViewById(R.id.rvMovieList);
+        rv_movies = findViewById(R.id.rvMovieList);
         movies = new ArrayList<>();
         getSupportActionBar().hide();
+
 
 
         movieAdapter = new MovieAdapter(this,movies);

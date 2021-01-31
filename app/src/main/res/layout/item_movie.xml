@@ -3,6 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:transitionName="movies_transition"
     android:layout_height="wrap_content">
 
     <ImageView
@@ -10,6 +12,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ProgressBar
@@ -22,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -38,7 +42,7 @@
         android:textColor="@color/white"
         android:layout_marginStart="2dp"
         android:layout_marginTop="2dp"
-        android:textSize="12dp"
+        android:textSize="12sp"
         android:layout_toEndOf="@+id/ivPoster"
         tools:text="Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah." />
 </RelativeLayout>

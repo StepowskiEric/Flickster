@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Flixster</string>
+ <string name="wonder_woman_1984">Wonder Woman 1984</string>
+    <string name="wonder_woman_comes_into_conflict_with_the_soviet_union_during_the_cold_war_in_the_1980s_and_finds_a_formidable_foe_by_the_name_of_cheetah">Example</string>
+    <string name="example">example</string>
 </resources>
