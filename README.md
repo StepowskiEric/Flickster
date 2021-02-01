@@ -3,6 +3,38 @@
 Flixster is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
 
+## Flix Part 2
+
+### User Stories
+
+#### REQUIRED (10pts)
+
+- [x] (8pts) Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
+- [x] (2pts) Allow video posts to be played in full-screen using the YouTubePlayerView.
+
+#### BONUS
+
+- [x] Implement a shared element transition when user clicks into the details of a movie (1 point).
+- [x] Trailers for popular movies are played automatically when the movie is selected (1 point).
+- [x] When clicking on a popular movie (i.e. a movie voted for more than 5 stars) the video should be played immediately.
+ 
+
+### App Walkthough GIF
+
+`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
+
+<img src="https://github.com/StepowskiEric/Flickster/blob/main/Flicksterwalkthru.gif" width=250><br>
+
+### Notes
+
+Unfortunately, with the data-binding I messed up a lot of features so I ran out of time to accomplish adding that.
+
+## Open-source libraries used
+- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
+
+
+
 ## Flix Part 1
 
 ### User Stories
